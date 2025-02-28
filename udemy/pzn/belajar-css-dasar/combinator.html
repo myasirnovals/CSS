@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinator</title>
+</head>
+<style>
+    /*mengambil seluruh tag p yang di dalam div*/
+    div p {
+        color: red;
+    }
+
+    /*child selector*/
+    div > p {
+        color: blue;
+    }
+
+    /*adjacent sibling selector*/
+    div + p {
+        color: yellow;
+    }
+
+    /*general sibling selector*/
+    div ~ p {
+        color: green;
+    }
+</style>
+<body>
+<div>
+    <article>
+        <p>ini dipilih</p>
+    </article>
+    <p>child selector</p>
+</div>
+<p>Adjacent sibling selector</p>
+<p>General sibling selector</p>
+</body>
+</html>
